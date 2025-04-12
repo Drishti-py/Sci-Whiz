@@ -7,56 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
-
-
   <title>Sci-Whiz</title>
+
 </head>
 
 <body>
-
-  <label for=""></label><input type="checkbox" id="contact_box"> Animal Facts</label>
-  <label for=""></label><input type="checkbox" id="drawing_box"> Dinos</label>
-  <nav id="navbar">
-    <div>
-      <a href="">Home</a>
-      <a href="">Account</a>
-    </div>
-  </nav>
-
-  <script>
-    const navbar = document.getElementById('navbar');
-
-    function updateNav(itemId, text, href, checked) {
-      const existing = document.getElementById(itemId);
-
-      if (checked) {
-        if (!existing) {
-          // const li = document.createElement('li');
-          // li.id = itemId;
-          const a = document.createElement('a');
-          a.id = itemId;
-          a.href = href;
-          a.textContent = text;
-          // li.appendChild(a);
-          navbar.appendChild(a);
-        }
-      } else {
-        if (existing) {
-          existing.remove();
-        }
-      }
-    }
-
-    // Handle checkbox changes
-    document.getElementById('contact_box').addEventListener('change', function () {
-      updateNav('contactNavItem', 'Contact', 'contact.html', this.checked);
-    });
-
-    document.getElementById('drawing_box').addEventListener('change', function () {
-      updateNav('drawingNavItem', 'Drawing', 'drawing.html', this.checked);
-    });
-
-  </script>
+  <div id="root"></div>
 
 
 </body>
