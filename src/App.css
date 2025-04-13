@@ -1,3 +1,42 @@
+.logo {
+    height: 100px;
+}
+
+.head {
+    background-color: #143D60;
+    height: 80px;
+}
+
+.b1 {
+    background-color: #E1EEBC;
+}
+
+.b2 {
+    background-color: #90C67C;
+}
+
+.b3 {
+    background-color: #67AE6E;
+}
+
+.b4 {
+    background-color: #328E6E;
+}
+
+#back {
+    height: 150px;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.text {
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    opacity: 1;
+}
+
 a {
-  gap: 200px;
+    gap: 200px;
+
 }
