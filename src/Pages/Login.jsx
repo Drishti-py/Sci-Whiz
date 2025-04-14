@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { app } from "../firebase";
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+
 const auth = getAuth(app);
 const LoginPage = () => {
     const [email, setEmail] = useState('');
@@ -10,6 +11,8 @@ const LoginPage = () => {
             .then(value => console.log('Login success'))
             .catch(err => console.log(err));
     };
+
+
     return (
         <div className="login_page">
             <h1>Log In</h1>

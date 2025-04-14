@@ -1,4 +1,5 @@
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { app } from "./firebase";
 import SignupPage from './Pages/Signup';
 import LoginPage from './Pages/Login';
@@ -19,7 +20,14 @@ function App() {
         <div className='App'>
             {/* <SignupPage />
             <LoginPage /> */}
-            <Dashboard />
+            {/* <Dashboard /> */}
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Dashboard />} />
+                    <Route path="/Login" element={<LoginPage />} />
+                    <Route path="/Signup" element={<SignupPage />} />
+                </Routes>
+            </Router>
         </div>
     );
 }

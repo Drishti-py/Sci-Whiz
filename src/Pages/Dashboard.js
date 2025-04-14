@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Dashboard() {
+    const navigate = useNavigate();
 
     return (
         <div className='dash'>
             <nav className='head'>
-                <img src='' className='logo' ></img>
+                <img src='final_logo.png' className='logo' ></img>
+
             </nav>
 
             <div>
@@ -23,6 +26,9 @@ function Dashboard() {
                     <div>
                         <div className='text_container'>
                             <p className='content'>Welcome</p>
+
+                            <button onClick={() => navigate('/Login')} className='login'>Go to Login In</button>
+                            <button onClick={() => navigate('/Signup')} className='signin'>Go to Sign Up</button>
                         </div>
                         <div className='container2'>
                             <div className='text_container2'>
@@ -42,7 +48,14 @@ function Dashboard() {
                 </div>
             </div>
             <div className='bottom'>
-                <p className='bottom_text'>Home</p>
+                <div className='text_box'>
+                    <a className='bottom_text' onClick={() => navigate('/Dashboard')}>Home</a><br></br>
+                    <a className='bottom_text' onClick={() => navigate('/Login')}>About us</a><br></br>
+                    <a className='bottom_text' onClick={() => navigate('/Login')}>Contact Us</a><br></br>
+                    <a className='bottom_text' onClick={() => navigate('/Login')}>Help</a>
+
+                </div>
+
             </div>
 
 
