@@ -12,7 +12,6 @@ const LoginPage = () => {
             .catch(err => console.log(err));
     };
 
-
     return (
         <div className="login_page">
             <h1>Log In</h1>

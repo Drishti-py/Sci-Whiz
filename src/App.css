@@ -121,3 +121,26 @@
     padding-top: 20px;
     line-height: 40px;
 }
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px;
+}
+
+.tag {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+    background-color: #f0f0f0;
+    transition: 0.2s;
+}
+
+.tag.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
